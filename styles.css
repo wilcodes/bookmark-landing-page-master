@@ -12,10 +12,90 @@ nav{
      justify-content: space-between;
      padding: 40px 32px;
      margin-bottom: 50px;
+     position: relative;
+     z-index: 99;
 }
 
 nav .hamburger{
      cursor: pointer;
+}
+
+.links{
+     display: none;
+}
+
+.links-hamburger{
+     padding: 0;
+     margin: 0;
+     display: flex;
+     list-style: none;
+     align-items: center;
+     flex-flow: column;
+     list-style: none;
+     margin-top: 7rem;
+     
+}
+
+
+.links-hamburger li{
+     padding: 1rem;
+     width: 70%;
+     border-bottom: .5px solid rgb(198, 192, 192,0.5);
+     margin: 0 auto;
+     text-align: center;
+}
+
+.first-link{
+     border-top: .5px solid rgb(198, 192, 192,0.5);
+}
+
+.links-hamburger a {
+     color: #F7F7F7;
+   
+     font-family: 'Rubik';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 17px;
+     /* identical to box height, or 85% */
+
+     text-align: center;
+     letter-spacing: 2.30769px;
+     text-transform: uppercase;
+
+     color: #FFFFFF;
+          text-decoration: none;
+          
+}
+
+.hamburger{
+     position: relative;
+     z-index: 99;
+}
+
+.hamburger-modal{
+     display: none;
+     background: #242A45;
+     mix-blend-mode: normal;
+     opacity: 0.95;
+     backdrop-filter: blur(16.3097px);
+     position: fixed;
+     z-index: 1;
+     padding:0.5%;
+     left: 0;
+     top: 0;
+     width: 100%; 
+     height: 100%;
+     overflow: auto;
+}
+
+.icons-box{
+     text-align: center;
+     margin-top: 2rem;
+}
+
+.icons-box img{
+     margin-right: .6rem;
 }
 
 header{
@@ -96,7 +176,51 @@ opacity: 0.5;
 }
 
 @media only screen and (min-width: 700px)  {
+.hamburger{
+     display: none;
+}
+.links{
+     display: block;
+}
 
+.links{
+     padding: 0;
+     margin: 0;
+     display: flex;
+     list-style: none;
+     align-items: center;
+}
+
+.links a {
+     text-decoration: none;
+     margin-right: 2rem;
+     font-family: 'Rubik';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 28px;
+     color: #242A45;
+     mix-blend-mode: normal;
+     opacity: 0.5;
+     text-transform: uppercase;
+     letter-spacing: 1.5px;
+     
+}
+
+.contact{
+     
+     background-color: #FA5959;
+     box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+     border-radius: 5px;
+     padding: .5rem 1rem;
+}
+
+.contact a {
+     color: rgba(255, 255, 255, 1);
+     opacity: 1;
+     margin: 0 auto;
+     
+}
     
 }
 
@@ -170,3 +294,4 @@ opacity: 0.5;
      
 }
 
+/* --------------Features code page --------  */
