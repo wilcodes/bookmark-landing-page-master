@@ -7,6 +7,8 @@
      box-sizing: border-box;
 }
 
+/* Navigation-Styles */
+
 nav{
      display: flex;
      justify-content: space-between;
@@ -97,7 +99,13 @@ nav .hamburger{
 .icons-box img{
      margin-right: .6rem;
 }
+figure{
+     font-size: 2rem;
+}
 
+.white-logo{display: none;}
+
+/* Header-Styles */
 header{
      position: relative;
 }
@@ -119,6 +127,7 @@ header .figure{
      border-radius: 316.5px 0 0 315px;
      height: 200px;
 }
+/* Main Styles */
 
 main{
      margin-top: 48px;
@@ -176,6 +185,7 @@ opacity: 0.5;
 }
 
 @media only screen and (min-width: 700px)  {
+    
 .hamburger{
      display: none;
 }
@@ -223,7 +233,6 @@ opacity: 0.5;
 }
     
 }
-
 
 @media only screen and (min-width: 1200px)  {
 
