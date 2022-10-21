@@ -158,7 +158,12 @@ main p, .faqs p, .download p{
      color: #242A45;
      mix-blend-mode: normal;
      opacity: 0.5;
+     margin: 1.5rem 0;
 
+}
+
+.download p{
+     margin: 1rem;
 }
 
 .button-box{
@@ -201,13 +206,17 @@ main p, .faqs p, .download p{
      font-family: 'Rubik';
      font-style: normal;
      font-weight: 500;
-     font-size: 24px;
+     font-size: 32px;
      line-height: 52px;
      text-align: center;
      letter-spacing: -0.075px;
      color: #242A45;
+    
 
 }
+
+
+
 
 .footer-subscribe{
      background-color: rgba(82, 103, 223, 1);
@@ -373,6 +382,7 @@ br{
           margin: 1rem 0;
      }
 
+     
 
 
      form{
@@ -466,12 +476,16 @@ br{
 
      main{
           
-          width: 50%;
+          width: 70%;
           margin: 0;
          
      }
      header{
           width: 50%;
+     }
+     main h1{
+          font-size: 48px;
+          line-height: 52px;
      }
 
      .main-container{
@@ -492,11 +506,7 @@ br{
           padding: 0;
      }
 
-     .inner-box h1, .faqs h2{
-          font-weight: 500;
-          font-size: 42px;
-          line-height: 52px;
-     }
+    
 
      .button-box{
           display: flex;
