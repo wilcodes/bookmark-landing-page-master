@@ -148,16 +148,17 @@ main h1{
      margin-bottom: 15px;
 }
 
-main p, .faqs p{
-padding: 0 32px;
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 25px;
-text-align: center;
-color: #242A45;
-mix-blend-mode: normal;
-opacity: 0.5;
+main p, .faqs p, .download p{
+     padding: 0 32px;
+     font-style: normal;
+     font-weight: 400;
+     font-size: 15px;
+     line-height: 25px;
+     text-align: center;
+     color: #242A45;
+     mix-blend-mode: normal;
+     opacity: 0.5;
+
 }
 
 .button-box{
@@ -190,12 +191,12 @@ opacity: 0.5;
 
 /* Section FAQS */
 
-.faqs{
+.faqs, .download{
      padding: 1rem;
-     margin-top: 48px;
+     margin-top: 10px;
 }
 
-.faqs h2{
+.faqs h2, .download h2{
      text-align: center;
      font-family: 'Rubik';
      font-style: normal;
@@ -206,10 +207,6 @@ opacity: 0.5;
      letter-spacing: -0.075px;
      color: #242A45;
 
-}
-
-footer{
-     
 }
 
 .footer-subscribe{
@@ -303,6 +300,60 @@ footer{
      margin-left: 1rem;
 }
 
+.col-md-12{
+     margin-bottom: 2rem;
+
+}
+
+.card{
+     width: 100%;
+     padding: 1rem;
+     margin: 0 auto;
+     background-color: rgba(255, 255, 255, 1);
+     box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+     border-radius: 15px;
+     border: none;
+}
+
+
+
+.card img{
+width: 100%;
+height: auto;
+
+}
+
+.card figure{
+     margin: 0 auto;
+}
+
+.card-title{
+     text-align: center;
+     margin: .5rem 0;
+}
+
+
+.card-text{
+     font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 28px;
+
+text-align: center;
+
+color: #242A45;
+
+mix-blend-mode: normal;
+opacity: 0.5;
+}
+
+br{
+     display: none;
+}
+
+
+
 
 @media only screen and (min-width: 700px)  {
 
@@ -327,11 +378,14 @@ footer{
      form{
           display: flex;
           justify-content: space-between;
+          align-items: baseline;
+          
      }
 
      .footer-subscribe a{
          width: 126px;
          margin-left: .5rem;
+         
           
      }
      
@@ -401,6 +455,10 @@ footer{
      align-items: center;
 }
 
+br{
+     display: inline-block;
+}
+
 
 }
 
@@ -452,7 +510,14 @@ footer{
           height: 48px;
      }
 
-     .tertiary{
+     .extension button{
+          width: auto;
+          height: 48px;
+     }
+     
+
+
+     .tertiary, .extension{
           justify-content: center;
      }
 
@@ -477,14 +542,25 @@ footer{
           border-radius: 316.5px 0 0 315px;
           height: 300px;
      }
+
+     .download p{
+          margin-bottom: 2.5rem;
+     }
+
+     .download{
+          margin-top: 5rem;
+     }
+
+     .card{
+          width: 75%;
+     }
+     
+     
      
 }
 
-/* --------------Features code page --------  */
 
 
-
-/* Navigation-Styles */
 
 
 
