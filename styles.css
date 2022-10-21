@@ -126,7 +126,10 @@ header .figure{
      background-color: rgba(82, 103, 223, 1);
      border-radius: 316.5px 0 0 315px;
      height: 200px;
+     display: block;
 }
+
+
 /* Main Styles */
 
 main{
@@ -145,7 +148,7 @@ main h1{
      margin-bottom: 15px;
 }
 
-main p{
+main p, .faqs p{
 padding: 0 32px;
 font-style: normal;
 font-weight: 400;
@@ -184,8 +187,156 @@ opacity: 0.5;
      
 }
 
-@media only screen and (min-width: 700px)  {
+
+/* Section FAQS */
+
+.faqs{
+     padding: 1rem;
+     margin-top: 48px;
+}
+
+.faqs h2{
+     text-align: center;
+     font-family: 'Rubik';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 24px;
+     line-height: 52px;
+     text-align: center;
+     letter-spacing: -0.075px;
+     color: #242A45;
+
+}
+
+footer{
+     
+}
+
+.footer-subscribe{
+     background-color: rgba(82, 103, 223, 1);
+     padding: 32px 60px ;
+}
+
+.footer-subscribe h1, .footer-subscribe h4{
+     font-family: 'Rubik';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 24px;
+     line-height: 28px;
+     letter-spacing: -0.075px;
+     width: 100%;
+     color: rgba(255, 255, 255, 1);
+   text-align: center;
     
+}
+
+.footer-subscribe h1{
+     padding-bottom: 1rem;
+}
+
+.footer-subscribe h4{
+     text-transform: uppercase;
+     font-weight: 500;
+     font-size: 12px;
+     line-height: 40px;
+     letter-spacing: 4.61539px;
+}
+
+
+.footer-subscribe input::placeholder{
+     color: rgba(36, 42, 69, 0.25);
+     font-family: 'Rubik';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 28px;
+     letter-spacing: 0.25px;
+
+}
+
+.footer-subscribe a{
+     display: inline-block;
+     background-color: #FA5959;
+     box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+     border-radius: 5px;
+     padding: .5rem 1rem;
+     text-decoration: none;
+     color: #F7F7F7;
+     width: 100%;
+     text-align: center;
+     margin-top: .5rem;
+     
+}
+
+.footer-links{
+     background-color:#242A45;
+     text-align: center;
+     padding: 40px 114px;
+     box-sizing: border-box;
+}
+
+.footer-links ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     margin-left: 1rem;
+}
+
+.footer-links a{
+     font-family: 'Rubik';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 15px;
+     line-height: 17px;
+     letter-spacing: 1.73077px;
+     text-decoration: none;
+     text-transform: uppercase;
+    
+     color: #FFFFFF;
+}
+
+.footer-links li{
+     margin-bottom: 1rem;
+}
+
+.footer-social figure img{
+     margin-left: 1rem;
+}
+
+
+@media only screen and (min-width: 700px)  {
+
+
+
+     .faqs{
+          padding-top: 100px;
+          padding-bottom: 50px;
+     }
+
+     .footer-controller{
+          margin: 0 auto;
+          width:450px;
+     }
+
+     .footer-controller h1{
+          margin: 1rem 0;
+     }
+
+
+
+     form{
+          display: flex;
+          justify-content: space-between;
+     }
+
+     .footer-subscribe a{
+         width: 126px;
+         margin-left: .5rem;
+          
+     }
+     
+
+     
 .hamburger{
      display: none;
 }
@@ -218,7 +369,6 @@ opacity: 0.5;
 }
 
 .contact{
-     
      background-color: #FA5959;
      box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
      border-radius: 5px;
@@ -231,7 +381,27 @@ opacity: 0.5;
      margin: 0 auto;
      
 }
-    
+
+.footer-links{
+     display: flex;
+     justify-content: space-around;
+     padding: 15px 0;
+}
+
+.footer-links ul{
+     display: flex; 
+     margin-top: .3rem;
+}
+.footer-links ul li{
+    margin-left:1rem ;
+}
+
+.links-box-footer{
+     display: flex;
+     align-items: center;
+}
+
+
 }
 
 @media only screen and (min-width: 1200px)  {
@@ -253,9 +423,7 @@ opacity: 0.5;
           padding-top: 3rem;
      }
 
-     .inner-box{
-
-          
+     .inner-box, .faqs{
           width: 60%;
           margin: 0 auto;
      
@@ -266,7 +434,7 @@ opacity: 0.5;
           padding: 0;
      }
 
-     .inner-box h1{
+     .inner-box h1, .faqs h2{
           font-weight: 500;
           font-size: 42px;
           line-height: 52px;
@@ -277,6 +445,15 @@ opacity: 0.5;
           justify-content: flex-start;
           margin-top: 32px;
           
+     }
+
+     .tertiary button{
+          width: 114px;
+          height: 48px;
+     }
+
+     .tertiary{
+          justify-content: center;
      }
 
      .button-box button{
@@ -304,3 +481,12 @@ opacity: 0.5;
 }
 
 /* --------------Features code page --------  */
+
+
+
+/* Navigation-Styles */
+
+
+
+
+
