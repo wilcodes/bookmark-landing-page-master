@@ -134,6 +134,7 @@ header .figure{
 
 main{
      margin-top: 48px;
+     padding: .8rem;
 }
 
 main h1{
@@ -149,7 +150,7 @@ main h1{
 }
 
 main p, .faqs p, .download p{
-     padding: 0 32px;
+     padding: 0 22px;
      font-style: normal;
      font-weight: 400;
      font-size: 15px;
@@ -309,8 +310,8 @@ main p, .faqs p, .download p{
      margin-left: 1rem;
 }
 
-.col-md-12{
-     margin-bottom: 2rem;
+.col-sm-12{
+     margin: 2rem 0;
 
 }
 
@@ -362,16 +363,75 @@ br{
 }
 
 
+/* Contact-Styles */
+
+.contact-page{
+     background-color: #e7e8d5;
+     color: #000000;
+     padding: 1rem;
+     border-radius: 30px 30px 0 0;
+}
+
+.contact-page h1{
+     text-align: center;
+     margin-bottom: .5rem;
+   
+}
+
+.contact-page p{
+     text-align: center;
+     padding: 0 2rem;
+}
+
+.list-icons{
+     padding: 1rem;
+     text-align: center;
+}
+
+.list-icons ion-icon{
+     font-size: 40px;
+     margin-bottom: .5rem;
+     color: #FA5959;
+}
+
+.main-form{
+     background-color: #ffffff;
+     padding: 1rem;
+     border-radius: 20px;
+     color: #242A45;
+     margin: 1rem 0;
+}
+
+.main-form label{
+     padding: 1rem 0;
+}
+
+#feature{
+     margin: 0;
+}
+
+.form-check-label{
+     padding: 0 !important;
+}
+
+.form-check{
+     margin-top: 1rem; 
+}
+
+
+
+
 
 
 @media only screen and (min-width: 700px)  {
 
 
-
-     .faqs{
-          padding-top: 100px;
-          padding-bottom: 50px;
+     .contact-row{
+          display: flex;
+          justify-content: center;
      }
+     
+   
 
      .footer-controller{
           margin: 0 auto;
@@ -382,22 +442,18 @@ br{
           margin: 1rem 0;
      }
 
-     
 
-
-     form{
+     .footer-input{
           display: flex;
           justify-content: space-between;
           align-items: baseline;
           
      }
 
-     .footer-subscribe a{
-         width: 126px;
-         margin-left: .5rem;
-         
-          
-     }
+    .anchor-link{
+     margin-left: .5rem;
+     width:40%;
+    }
      
 
      
@@ -469,13 +525,44 @@ br{
      display: inline-block;
 }
 
+header img {
+     
+     width: 413px;
+     height: 269px;
+     
+}
+
+
+
 
 }
 
 @media only screen and (min-width: 1200px)  {
 
+   
+
+     .main-form{
+         
+          background-color: #ffffff;
+          padding: 1rem;
+          border-radius: 20px;
+          color: #242A45;
+          margin: 1rem 0;
+     }
+
+     .form-box{
+          width: 50%;
+          margin: 0 auto;
+     }
+     
+
+     .faqs{
+          padding-top: 100px;
+          padding-bottom: 50px;
+     }
+
      main{
-          
+          padding: 0;
           width: 70%;
           margin: 0;
          
